@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlivery — Status do pedido</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="proto-nav">Protótipo Deadlivery · Tela 8 de 10 — <a href="index.html">ver mapa de telas</a></p>
+
+<div class="device">
+  <div class="statusbar">
+    <span>23:34</span>
+    <span>●●● 5G 100%</span>
+  </div>
+
+  <div class="screen">
+
+    <div class="topbar">
+      <a href="home.html" class="back-btn" aria-label="Voltar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <h1>Pedido #DL-1313</h1>
+    </div>
+
+    <div class="ritual-track">
+      <div class="r-fill" style="width:66%;"></div>
+      <div class="ritual-step done">
+        <div class="r-dot">✓</div>
+        <div class="r-label">Recebido</div>
+      </div>
+      <div class="ritual-step done">
+        <div class="r-dot">🔥</div>
+        <div class="r-label">Em preparo</div>
+      </div>
+      <div class="ritual-step current">
+        <div class="r-dot">🎃</div>
+        <div class="r-label">Pronto</div>
+      </div>
+      <div class="ritual-step">
+        <div class="r-dot">🦇</div>
+        <div class="r-label">Entregue</div>
+      </div>
+    </div>
+
+    <div class="status-message">
+      <div class="s-title">Seus doces ressuscitaram do forno</div>
+      <p class="s-sub">O pedido está pronto e aguardando o Caronte (ou seja, seu entregador) para sair rumo à sua casa. Previsão de chegada às 00:05.</p>
+    </div>
+
+    <div class="order-summary-card">
+      <div class="os-row"><span>Cupcake Caveira ×2</span><span>R$ 30,80</span></div>
+      <div class="os-row"><span>Cookie Jack-o'-Lantern ×1</span><span>R$ 8,50</span></div>
+      <div class="os-row"><span>GhostShake ×1</span><span>R$ 14,90</span></div>
+      <div class="os-row"><span>Desconto (ASSOMBRADO10)</span><span>− R$ 5,42</span></div>
+      <div class="os-row"><span>Entrega</span><span>R$ 6,90</span></div>
+      <div class="os-row total"><span>Total pago via Pix</span><span>R$ 55,68</span></div>
+    </div>
+
+    <div class="field-label">Entrega</div>
+    <div class="choice-card">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="opt-info">
+        <div class="opt-title">Casa — Cabana do mistério, 13ª árvore</div>
+        <div class="opt-sub">Gravity Falls</div>
+      </div>
+    </div>
+
+    <a href="avaliacao.html" class="btn-secondary" style="display:block; margin:8px 18px 0; width:auto; border-color:var(--pumpkin); color:var(--pumpkin);">Simular: pedido entregue → avaliar</a>
+
+  </div>
+
+  <nav class="tabbar">
+    <a href="home.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+      Cardápio
+    </a>
+    <a href="carrinho.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 1h4l2.6 13.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+      Carrinho
+    </a>
+    <a href="status.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+      Pedidos
+    </a>
+    <a href="perfil.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      Perfil
+    </a>
+  </nav>
+
+</div>
+
+</body>
+</html>

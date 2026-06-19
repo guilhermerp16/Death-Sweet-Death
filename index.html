@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlivery — Mapa do protótipo</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body{ background: #0E0716; }
+  .index-head{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom: 18px;
+  }
+  .index-head .logo-mark{ width:64px; height:64px; }
+  .index-head .wordmark{ font-size:32px; }
+  .index-head p{
+    font-size:14px;
+    color: var(--bone-dim);
+    opacity:0.85;
+    max-width: 560px;
+    line-height:1.6;
+    margin-top: 18px;
+  }
+  .flow-note{
+    font-size:11.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color: var(--pumpkin);
+    background: rgba(255,122,51,0.1);
+    border:1.5px dashed var(--pumpkin);
+    display:inline-block;
+    padding:8px 14px;
+    border-radius: 999px;
+    margin: 18px 0 28px;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+  .screen-card{
+    background: var(--plum);
+    border: 2px solid var(--plum-soft);
+    border-radius: var(--radius-card);
+    padding: 18px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .screen-card .num{
+    font-family: var(--font-serif);
+    font-weight:800;
+    font-size:11px;
+    color: var(--cherry);
+  }
+  .screen-card h3{
+    font-family: var(--font-display);
+    font-size: 19px;
+    color: var(--bone);
+  }
+  .screen-card .req-tag{
+    font-size:10px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    color: var(--ink);
+    background: var(--pumpkin);
+    padding:3px 8px;
+    border-radius:999px;
+    display:inline-block;
+    width:fit-content;
+  }
+  .screen-card p{
+    font-size:12.5px;
+    color: var(--bone-dim);
+    opacity:0.85;
+    line-height:1.5;
+    flex:1;
+  }
+  .screen-card a.go{
+    align-self:flex-start;
+    font-size:11.5px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    color: var(--ink);
+    background: var(--pumpkin);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-top:4px;
+  }
+  footer.foot{
+    margin-top:36px;
+    font-size:12px;
+    color:#8a7a9f;
+    line-height:1.6;
+  }
+</style>
+</head>
+<body>
+
+<div class="index-wrap">
+  <div class="index-head">
+    <div class="logo-mark"><img src="logo.png" alt="Logo Deadlivery"></div>
+    <div>
+      <div class="wordmark">Dead<span class="accent">livery</span></div>
+      <div class="brand-sub">Death, Sweet Death</div>
+    </div>
+  </div>
+
+  <p>Protótipo navegável do app de delivery da confeitaria temática de Halloween Death, Sweet Death.</p>
+
+  <span class="flow-note">Fluxo sugerido: Login → Cardápio → Produto → Carrinho → Entrega → Pagamento → Status → Avaliação</span>
+
+  <div class="grid">
+
+    <div class="screen-card">
+      <h3>Entrar</h3>
+      <p>Tela de login com e-mail e senha, atalho para recuperação e link para cadastro.</p>
+      <a class="go" href="login.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Criar conta</h3>
+      <p>Formulário de cadastro com dados pessoais e aceite de termos.</p>
+      <a class="go" href="cadastro.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Cardápio</h3>
+      <p>Busca, categorias, banner de promoção e produtos organizados por seção.</p>
+      <a class="go" href="home.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Detalhe do produto</h3>
+      <p>Escolha de recheio, adicionais com preço, remoção de ingredientes e observações.</p>
+      <a class="go" href="produto.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Carrinho</h3>
+      <p>Itens com quantidade, cupom de desconto e cálculo automático do total.</p>
+      <a class="go" href="carrinho.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Entrega ou retirada</h3>
+      <p>Escolha entre entrega em domicílio e retirada no balcão, com endereço e horário.</p>
+      <a class="go" href="entrega.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Pagamento</h3>
+      <p>Pix, cartão de crédito e cartão de débito como formas de pagamento.</p>
+      <a class="go" href="pagamento.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Status do pedido</h3>
+      <p>Trilha com recebido, em preparo, pronto e entregue, mais resumo do pedido.</p>
+      <a class="go" href="status.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Avaliar pedido</h3>
+      <p>Avaliação por estrelas, tags rápidas de feedback e campo de comentário livre.</p>
+      <a class="go" href="avaliacao.html">Abrir tela →</a>
+    </div>
+
+    <div class="screen-card">
+      <h3>Perfil</h3>
+      <p>Dados da conta, endereços, pagamentos, histórico de pedidos e cupons.</p>
+      <a class="go" href="perfil.html">Abrir tela →</a>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

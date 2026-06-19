@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlivery — Criar conta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="proto-nav">Protótipo Deadlivery · Tela 2 de 10 — <a href="index.html">ver mapa de telas</a></p>
+
+<div class="device">
+  <div class="statusbar">
+    <span>23:14</span>
+    <span>●●● 5G 100%</span>
+  </div>
+
+  <div class="screen" style="padding-bottom:24px;">
+
+    <div class="topbar">
+      <a href="login.html" class="back-btn" aria-label="Voltar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <h1>Junte-se ao culto 🕯️</h1>
+    </div>
+
+    <div style="padding:0 18px 18px; font-size:13px; color:var(--bone-dim); opacity:0.85;">
+      Crie sua conta para acompanhar seus pedidos e nunca perder uma promoção sinistra.
+    </div>
+
+    <form style="padding:0 18px;" onsubmit="return false;">
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input id="nome" type="text" placeholder="Como podemos te chamar?">
+      </div>
+      <div class="field">
+        <label for="email2">E-mail</label>
+        <input id="email2" type="email" placeholder="seuemail@exemplo.com">
+      </div>
+      <div class="field">
+        <label for="tel">Telefone</label>
+        <input id="tel" type="tel" placeholder="(00) 00000-0000">
+      </div>
+      <div class="field">
+        <label for="senha2">Senha</label>
+        <input id="senha2" type="password" placeholder="Crie uma senha forte">
+      </div>
+      <div class="field">
+        <label for="senha3">Confirmar senha</label>
+        <input id="senha3" type="password" placeholder="Repita a senha">
+      </div>
+
+      <div style="display:flex; align-items:flex-start; gap:10px; margin: 16px 0 22px;">
+        <div class="check-box checked" style="margin-top:2px;">✓</div>
+        <p style="font-size:11.5px; color:var(--bone-dim); opacity:0.8; line-height:1.5;">
+          Aceito os termos de uso e a política de privacidade do Deadlivery.
+        </p>
+      </div>
+
+      <a href="home.html" class="btn-primary">Ressuscitar conta</a>
+    </form>
+
+    <p class="switch-line">Já tem conta? <a href="login.html">Entrar</a></p>
+
+  </div>
+
+</div>
+
+</body>
+</html>

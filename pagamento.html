@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlivery — Pagamento</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="proto-nav">Protótipo Deadlivery · Tela 7 de 10 — <a href="index.html">ver mapa de telas</a></p>
+
+<div class="device">
+  <div class="statusbar">
+    <span>23:25</span>
+    <span>●●● 5G 100%</span>
+  </div>
+
+  <div class="screen">
+
+    <div class="topbar">
+      <a href="entrega.html" class="back-btn" aria-label="Voltar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <h1>Selar o pacto</h1>
+    </div>
+
+    <div class="field-label">Forma de pagamento</div>
+
+    <div class="choice-card selected">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 12l10 10 10-10z"/><path d="M12 7v10M7 12h10"/></svg>
+      </div>
+      <div class="opt-info">
+        <div class="opt-title">Pix</div>
+        <div class="opt-sub">Confirmação instantânea</div>
+      </div>
+      <div class="radio-circle checked"></div>
+    </div>
+
+    <div class="choice-card">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      </div>
+      <div class="opt-info">
+        <div class="opt-title">Cartão de crédito</div>
+        <div class="opt-sub">•••• •••• •••• 4521 — Visa</div>
+      </div>
+      <div class="radio-circle"></div>
+    </div>
+
+    <div class="choice-card">
+      <div class="icon-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg>
+      </div>
+      <div class="opt-info">
+        <div class="opt-title">Cartão de débito</div>
+        <div class="opt-sub">•••• •••• •••• 7790 — Mastercard</div>
+      </div>
+      <div class="radio-circle"></div>
+    </div>
+
+    <div style="margin: 4px 18px 0; padding: 14px 16px; background: rgba(255,122,51,0.08); border:2px dashed var(--pumpkin); border-radius:var(--radius-card); display:flex; gap:10px; align-items:flex-start;">
+      <span style="font-size:16px;">🕯️</span>
+      <p style="font-size:12px; color:var(--bone-dim); line-height:1.5;">
+        Ao escolher Pix, um QR Code será gerado na próxima tela para você concluir o pagamento.
+      </p>
+    </div>
+
+    <div class="summary-box" style="margin-top:18px;">
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <span>R$ 48,78</span>
+      </div>
+      <div class="summary-line">
+        <span>Taxa de entrega</span>
+        <span>R$ 6,90</span>
+      </div>
+      <div class="summary-line total">
+        <span>Total a pagar</span>
+        <span>R$ 55,68</span>
+      </div>
+    </div>
+
+    <a href="status.html" class="btn-primary" style="display:block; margin:24px 18px 0; width:auto;">Confirmar pedido — R$ 55,68</a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
